@@ -47,19 +47,19 @@ RSpec.describe Gradebook do
   end
  end
 
- describe '#students_below_2.5' do
-  it 'gradebook can list students that have a grade 2.5 or lower in their course' do
-    gradebook = Gradebook.new("Mx Alexander")
-    course1 = Course.new("Calculus", 2)
-    gradebook.add_courses(course1)
+#  describe '#students_below_2.5' do
+#   xit 'gradebook can list students that have a grade 2.5 or lower in their course' do
+#     gradebook = Gradebook.new("Mx Alexander")
+#     course1 = Course.new("Calculus", 2)
+#     gradebook.add_courses(course1)
 
-    student1 = Student.new({name: "Morgan", age: 21})
-    student2 = Student.new({name: "Jordan", age: 29})
+#     student1 = Student.new({name: "Morgan", age: 21})
+#     student2 = Student.new({name: "Jordan", age: 29})
 
-    course1.enroll(student1)
-    course1.enroll(student2)
+#     course1.enroll(student1)
+#     course1.enroll(student2)
 
-    expect(gradebook.)
-  end 
- end
+#     expect(gradebook.)
+#   end 
+#  end
 end
