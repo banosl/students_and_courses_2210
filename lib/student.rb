@@ -5,6 +5,10 @@ class Student
  end 
 
  def name
-    @name
+  @name
+ end
+
+ def age
+  @age
  end
 end
