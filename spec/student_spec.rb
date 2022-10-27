@@ -17,5 +17,6 @@ RSpec.describe Student do
  it 'student has an age' do
   student = Student.new({name: "Morgan", age: 21})
   
-  expect(student.age).to eq("21")
+  expect(student.age).to eq(21)
+ end
 end
