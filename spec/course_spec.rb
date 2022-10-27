@@ -4,7 +4,7 @@ require './lib/student'
 RSpec.describe Course do
  it 'course exists' do
   course = Course.new("Calculus", 2)
-
+  
   expect(course).to be_instance_of(Course)
  end
  
@@ -18,5 +18,11 @@ RSpec.describe Course do
   course = Course.new("Calculus", 2)
   
   expect(course.capacity).to eq(2)
+ end
+
+ it 'course has no students as a default' do
+  course = Course.new("Calculus", 2)
+
+  expect(course.students).to eq([])
  end
 end
