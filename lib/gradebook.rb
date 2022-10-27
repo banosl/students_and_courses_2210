@@ -8,4 +8,8 @@ class Gradebook
  def courses
     @courses
  end
+
+ def add_courses(course)
+    @courses << course
+ end
 end
