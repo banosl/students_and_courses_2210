@@ -1,7 +1,7 @@
 require './lib/course'
 require './lib/student'
 
-RSpec.describe course
+RSpec.describe Course do
  it 'course exists' do
   course = Course.new("Calculus", 2)
 
