@@ -19,4 +19,10 @@ RSpec.describe Student do
   
   expect(student.age).to eq(21)
  end
+
+ it 'student has no score as default' do
+  student = Student.new({name: "Morgan", age: 21})
+  
+  expect(student.scores).to eq([])
+ end
 end
