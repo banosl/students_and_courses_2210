@@ -13,4 +13,8 @@ class Student
  def age
   @age
  end
+
+ def log_score(score)
+  @scores << score
+ end
 end
