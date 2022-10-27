@@ -13,4 +13,8 @@ class Course
  def students
     @students
  end
+
+ def full?
+  @students.count >= @capacity
+ end
 end
