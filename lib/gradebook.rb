@@ -6,16 +6,17 @@ class Gradebook
  end
 
  def courses
-    @courses
+  @courses
  end
 
  def add_courses(course)
-    @courses << course
+  @courses << course
  end
 
  def students_in_courses
-    @courses.map do |course|
-        course.students
-    end
+  list = @courses.map do |course|
+   course.students
+  end
+  list.flatten
  end
 end
